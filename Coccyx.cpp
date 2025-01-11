@@ -54,10 +54,10 @@ vector<long double> Body::GravatationalForce(vector<long double>x, vector<long d
     }
     vector<long double>unit_vector(3,0);
     for(int i=0; i<distance_vector.size(); i++){
-        unit_vector[i]=distance_vector[i]/r;
+        unit_vector[i]=distance_vector[i]/r2;
     }
 
-    long double ForceScalar= G*(M*m)/(r2);
+    long double ForceScalar= G*(M*m)/(r);
     for(int i=0; i<unit_vector.size(); i++){
         unit_vector[i]*=ForceScalar;
 }
