@@ -1,0 +1,277 @@
+Solar_System_Sim_Output
+
+Distance Vector:1.03673e+11  0  0  
+Gravitational Force:-2.34334e-74 0 0 
+Force Magnitude: 2.34334e-74
+Gravitational Force:-3.45503e-73 0 0 
+Force Magnitude: 3.45503e-73
+Gravitational Force:-4.55535e-73 0 0 
+Force Magnitude: 4.55535e-73
+Gravitational Force:-1.34737e-70 0 0 
+Force Magnitude: 1.34737e-70
+Gravitational Force:-4.0343e-71 0 0 
+Force Magnitude: 4.0343e-71
+Gravitational Force:-6.16254e-72 0 0 
+Force Magnitude: 6.16254e-72
+Gravitational Force:-7.26926e-72 0 0 
+Force Magnitude: 7.26926e-72
+Force Vector: -1.89336e-70 0 0 
+Gravitational Force:-2.34282e-74 -2.01473e-76 0 
+Force Magnitude: 2.34291e-74
+Gravitational Force:-3.45426e-73 -2.97052e-75 0 
+Force Magnitude: 3.45439e-73
+Gravitational Force:-4.55434e-73 -3.91654e-75 0 
+Force Magnitude: 4.55451e-73
+Gravitational Force:-1.34707e-70 -1.15842e-72 0 
+Force Magnitude: 1.34712e-70
+Gravitational Force:-4.0334e-71 -3.46855e-73 0 
+Force Magnitude: 4.03355e-71
+Gravitational Force:-6.16117e-72 -5.29835e-74 0 
+Force Magnitude: 6.1614e-72
+Gravitational Force:-7.26764e-72 -6.24986e-74 0 
+Force Magnitude: 7.26791e-72
+Force Vector: -1.89294e-70 -1.62785e-72 0 
+Gravitational Force:-2.34282e-74 -2.01473e-76 0 
+Force Magnitude: 2.34291e-74
+Gravitational Force:-3.45426e-73 -2.97052e-75 0 
+Force Magnitude: 3.45439e-73
+Gravitational Force:-4.55434e-73 -3.91654e-75 0 
+Force Magnitude: 4.55451e-73
+Gravitational Force:-1.34707e-70 -1.15842e-72 0 
+Force Magnitude: 1.34712e-70
+Gravitational Force:-4.0334e-71 -3.46855e-73 0 
+Force Magnitude: 4.03355e-71
+Gravitational Force:-6.16117e-72 -5.29835e-74 0 
+Force Magnitude: 6.1614e-72
+Gravitational Force:-7.26764e-72 -6.24986e-74 0 
+Force Magnitude: 7.26791e-72
+Force Vector: -1.89294e-70 -1.62785e-72 0 
+Gravitational Force:-2.34126e-74 -4.02677e-76 0 
+Force Magnitude: 2.34161e-74
+Gravitational Force:-3.45196e-73 -5.93708e-75 0 
+Force Magnitude: 3.45247e-73
+Gravitational Force:-4.55131e-73 -7.82787e-75 0 
+Force Magnitude: 4.55199e-73
+Gravitational Force:-1.34617e-70 -2.3153e-72 0 
+Force Magnitude: 1.34637e-70
+Gravitational Force:-4.03072e-71 -6.93249e-73 0 
+Force Magnitude: 4.03131e-71
+Gravitational Force:-6.15708e-72 -1.05896e-73 0 
+Force Magnitude: 6.15799e-72
+Gravitational Force:-7.26281e-72 -1.24914e-73 0 
+Force Magnitude: 7.26388e-72
+Force Vector: -1.89168e-70 -3.25353e-72 0 
+l1: -1.89336e-70 0 0 
+l2: -1.89294e-70 -1.62785e-72 0 
+l3: -1.89294e-70 -1.62785e-72 0 
+l4: -1.89294e-70 -1.62785e-72 0 
+
+Position Vector: (1.496e+11,2.572992e+09,0)
+Veclocity Vector: (-1.6353797e-65,29780,0)
+
+Distance Vector:4.21872e+10  0  0  
+Gravitational Force:-2.3412632e-74 -4.0267724e-76 0 
+Force Magnitude: 2.3416095e-74
+Gravitational Force:-3.4519624e-73 -5.9370801e-75 0 
+Force Magnitude: 3.452473e-73
+Gravitational Force:-4.5513135e-73 -7.8278699e-75 0 
+Force Magnitude: 4.5519867e-73
+Gravitational Force:-1.3461732e-70 -2.3153026e-72 0 
+Force Magnitude: 1.3463722e-70
+Gravitational Force:-4.0307176e-71 -6.9324894e-73 0 
+Force Magnitude: 4.0313137e-71
+Gravitational Force:-6.1570754e-72 -1.0589643e-73 0 
+Force Magnitude: 6.157986e-72
+Gravitational Force:-7.2628098e-72 -1.2491412e-73 0 
+Force Magnitude: 7.263884e-72
+Force Vector: -1.8916812e-70 -3.2535298e-72 0 
+Gravitational Force:-2.3386688e-74 -6.0334652e-76 0 
+Force Magnitude: 2.3394469e-74
+Gravitational Force:-3.4481372e-73 -8.8957514e-75 0 
+Force Magnitude: 3.4492845e-73
+Gravitational Force:-4.54627e-73 -1.1728793e-74 0 
+Force Magnitude: 4.5477827e-73
+Gravitational Force:-1.3446814e-70 -3.4691054e-72 0 
+Force Magnitude: 1.3451288e-70
+Gravitational Force:-4.026251e-71 -1.0387211e-72 0 
+Force Magnitude: 4.0275907e-71
+Gravitational Force:-6.1502525e-72 -1.5866862e-73 0 
+Force Magnitude: 6.1522989e-72
+Gravitational Force:-7.2547616e-72 -1.8716354e-73 0 
+Force Magnitude: 7.2571755e-72
+Force Vector: -1.8895849e-70 -4.8748866e-72 0 
+Gravitational Force:-2.3386688e-74 -6.0334652e-76 0 
+Force Magnitude: 2.3394469e-74
+Gravitational Force:-3.4481372e-73 -8.8957514e-75 0 
+Force Magnitude: 3.4492845e-73
+Gravitational Force:-4.54627e-73 -1.1728793e-74 0 
+Force Magnitude: 4.5477827e-73
+Gravitational Force:-1.3446814e-70 -3.4691054e-72 0 
+Force Magnitude: 1.3451288e-70
+Gravitational Force:-4.026251e-71 -1.0387211e-72 0 
+Force Magnitude: 4.0275907e-71
+Gravitational Force:-6.1502525e-72 -1.5866862e-73 0 
+Force Magnitude: 6.1522989e-72
+Gravitational Force:-7.2547616e-72 -1.8716354e-73 0 
+Force Magnitude: 7.2571755e-72
+Force Vector: -1.8895849e-70 -4.8748866e-72 0 
+Gravitational Force:-2.335043e-74 -8.0321482e-76 0 
+Force Magnitude: 2.336424e-74
+Gravitational Force:-3.4427913e-73 -1.1842613e-74 0 
+Force Magnitude: 3.4448275e-73
+Gravitational Force:-4.5392217e-73 -1.5614146e-74 0 
+Force Magnitude: 4.5419064e-73
+Gravitational Force:-1.3425966e-70 -4.6183027e-72 0 
+Force Magnitude: 1.3433907e-70
+Gravitational Force:-4.0200088e-71 -1.3828142e-72 0 
+Force Magnitude: 4.0223864e-71
+Gravitational Force:-6.1407173e-72 -2.1123017e-73 0 
+Force Magnitude: 6.1443492e-72
+Gravitational Force:-7.2435141e-72 -2.4916449e-73 0 
+Force Magnitude: 7.2477982e-72
+Force Vector: -1.8866554e-70 -6.4897716e-72 0 
+l1: -1.8916812e-70 -3.2535298e-72 0 
+l2: -1.8895849e-70 -4.8748866e-72 0 
+l3: -1.8895849e-70 -4.8748866e-72 0 
+l4: -1.8895849e-70 -4.8748866e-72 0 
+
+Position Vector: (1.496e+11,5.145984e+09,0)
+Veclocity Vector: (-3.267861e-65,29780,0)
+
+Distance Vector:-5.69976e+10  0  0  
+Gravitational Force:-2.335043e-74 -8.0321482e-76 0 
+Force Magnitude: 2.336424e-74
+Gravitational Force:-3.4427913e-73 -1.1842613e-74 0 
+Force Magnitude: 3.4448275e-73
+Gravitational Force:-4.5392217e-73 -1.5614146e-74 0 
+Force Magnitude: 4.5419064e-73
+Gravitational Force:-1.3425966e-70 -4.6183027e-72 0 
+Force Magnitude: 1.3433907e-70
+Gravitational Force:-4.0200088e-71 -1.3828142e-72 0 
+Force Magnitude: 4.0223864e-71
+Gravitational Force:-6.1407173e-72 -2.1123017e-73 0 
+Force Magnitude: 6.1443492e-72
+Gravitational Force:-7.2435141e-72 -2.4916449e-73 0 
+Force Magnitude: 7.2477982e-72
+Force Vector: -1.8866554e-70 -6.4897716e-72 0 
+Gravitational Force:-2.3303922e-74 -1.0020188e-75 0 
+Force Magnitude: 2.3325455e-74
+Gravitational Force:-3.4359342e-73 -1.4773782e-74 0 
+Force Magnitude: 3.439109e-73
+Gravitational Force:-4.5301808e-73 -1.9478809e-74 0 
+Force Magnitude: 4.5343666e-73
+Gravitational Force:-1.3399226e-70 -5.7613805e-72 0 
+Force Magnitude: 1.3411606e-70
+Gravitational Force:-4.0120021e-71 -1.7250751e-72 0 
+Force Magnitude: 4.0157091e-71
+Gravitational Force:-6.1284868e-72 -2.6351182e-73 0 
+Force Magnitude: 6.1341494e-72
+Gravitational Force:-7.2290871e-72 -3.1083528e-73 0 
+Force Magnitude: 7.2357666e-72
+Force Vector: -1.8828977e-70 -8.0960573e-72 0 
+Gravitational Force:-2.3303922e-74 -1.0020188e-75 0 
+Force Magnitude: 2.3325455e-74
+Gravitational Force:-3.4359342e-73 -1.4773782e-74 0 
+Force Magnitude: 3.439109e-73
+Gravitational Force:-4.5301808e-73 -1.9478809e-74 0 
+Force Magnitude: 4.5343666e-73
+Gravitational Force:-1.3399226e-70 -5.7613805e-72 0 
+Force Magnitude: 1.3411606e-70
+Gravitational Force:-4.0120021e-71 -1.7250751e-72 0 
+Force Magnitude: 4.0157091e-71
+Gravitational Force:-6.1284868e-72 -2.6351182e-73 0 
+Force Magnitude: 6.1341494e-72
+Gravitational Force:-7.2290871e-72 -3.1083528e-73 0 
+Force Magnitude: 7.2357666e-72
+Force Vector: -1.8828977e-70 -8.0960573e-72 0 
+Gravitational Force:-2.3247247e-74 -1.1994983e-75 0 
+Force Magnitude: 2.3278172e-74
+Gravitational Force:-3.4275781e-73 -1.7685423e-74 0 
+Force Magnitude: 3.4321377e-73
+Gravitational Force:-4.5191635e-73 -2.3317724e-74 0 
+Force Magnitude: 4.5251752e-73
+Gravitational Force:-1.3366639e-70 -6.8968427e-72 0 
+Force Magnitude: 1.338442e-70
+Gravitational Force:-4.002245e-71 -2.0650557e-72 0 
+Force Magnitude: 4.007569e-71
+Gravitational Force:-6.1135824e-72 -3.1544516e-73 0 
+Force Magnitude: 6.1217151e-72
+Gravitational Force:-7.211506e-72 -3.720952e-73 0 
+Force Magnitude: 7.2210992e-72
+Force Vector: -1.8783185e-70 -9.6916414e-72 0 
+l1: -1.8866554e-70 -6.4897716e-72 0 
+l2: -1.8828977e-70 -8.0960573e-72 0 
+l3: -1.8828977e-70 -8.0960573e-72 0 
+l4: -1.8828977e-70 -8.0960573e-72 0 
+
+Position Vector: (1.496e+11,7.718976e+09,0)
+Veclocity Vector: (-4.8945663e-65,29780,0)
+
+Distance Vector:-5.9092e+11  0  0  
+Gravitational Force:-2.3247247e-74 -1.1994983e-75 0 
+Force Magnitude: 2.3278172e-74
+Gravitational Force:-3.4275781e-73 -1.7685423e-74 0 
+Force Magnitude: 3.4321377e-73
+Gravitational Force:-4.5191635e-73 -2.3317724e-74 0 
+Force Magnitude: 4.5251752e-73
+Gravitational Force:-1.3366639e-70 -6.8968427e-72 0 
+Force Magnitude: 1.338442e-70
+Gravitational Force:-4.002245e-71 -2.0650557e-72 0 
+Force Magnitude: 4.007569e-71
+Gravitational Force:-6.1135824e-72 -3.1544516e-73 0 
+Force Magnitude: 6.1217151e-72
+Gravitational Force:-7.211506e-72 -3.720952e-73 0 
+Force Magnitude: 7.2210992e-72
+Force Vector: -1.8783185e-70 -9.6916414e-72 0 
+Gravitational Force:-2.3180505e-74 -1.395397e-75 0 
+Force Magnitude: 2.3222466e-74
+Gravitational Force:-3.4177376e-73 -2.0573757e-74 0 
+Force Magnitude: 3.4239244e-73
+Gravitational Force:-4.506189e-73 -2.7125909e-74 0 
+Force Magnitude: 4.5143461e-73
+Gravitational Force:-1.3328264e-70 -8.0232156e-72 0 
+Force Magnitude: 1.3352391e-70
+Gravitational Force:-3.9907546e-71 -2.4023148e-72 0 
+Force Magnitude: 3.9979787e-71
+Gravitational Force:-6.0960304e-72 -3.6696277e-73 0 
+Force Magnitude: 6.1070654e-72
+Gravitational Force:-7.1908019e-72 -4.3286474e-73 0 
+Force Magnitude: 7.2038187e-72
+Force Vector: -1.8729259e-70 -1.1274453e-71 0 
+Gravitational Force:-2.3180505e-74 -1.395397e-75 0 
+Force Magnitude: 2.3222466e-74
+Gravitational Force:-3.4177376e-73 -2.0573757e-74 0 
+Force Magnitude: 3.4239244e-73
+Gravitational Force:-4.506189e-73 -2.7125909e-74 0 
+Force Magnitude: 4.5143461e-73
+Gravitational Force:-1.3328264e-70 -8.0232156e-72 0 
+Force Magnitude: 1.3352391e-70
+Gravitational Force:-3.9907546e-71 -2.4023148e-72 0 
+Force Magnitude: 3.9979787e-71
+Gravitational Force:-6.0960304e-72 -3.6696277e-73 0 
+Force Magnitude: 6.1070654e-72
+Gravitational Force:-7.1908019e-72 -4.3286474e-73 0 
+Force Magnitude: 7.2038187e-72
+Force Vector: -1.8729259e-70 -1.1274453e-71 0 
+Gravitational Force:-2.3103811e-74 -1.5894632e-75 0 
+Force Magnitude: 2.3158422e-74
+Gravitational Force:-3.4064299e-73 -2.3435072e-74 0 
+Force Magnitude: 3.4144816e-73
+Gravitational Force:-4.4912801e-73 -3.089847e-74 0 
+Force Magnitude: 4.5018961e-73
+Gravitational Force:-1.3284167e-70 -9.139052e-72 0 
+Force Magnitude: 1.3315566e-70
+Gravitational Force:-3.977551e-71 -2.736419e-72 0 
+Force Magnitude: 3.9869528e-71
+Gravitational Force:-6.0758615e-72 -4.1799847e-73 0 
+Force Magnitude: 6.0902229e-72
+Gravitational Force:-7.1670109e-72 -4.9306582e-73 0 
+Force Magnitude: 7.1839515e-72
+Force Vector: -1.8667292e-70 -1.2842458e-71 0 
+l1: -1.8783185e-70 -9.6916414e-72 0 
+l2: -1.8729259e-70 -1.1274453e-71 0 
+l3: -1.8729259e-70 -1.1274453e-71 0 
+l4: -1.8729259e-70 -1.1274453e-71 0 
+
+Position Vector: (1.496e+11,1.0291968e+10,0)
+Veclocity Vector: (-6.5126585e-65,29780,0)
