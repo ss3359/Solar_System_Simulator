@@ -17,15 +17,6 @@
 
 
 using namespace std;
-Body Mercury(3.301e23,{0.307,0,0},{0.0,47.87,0.0});
-Body Venus(4.867e24,{0.718,0,0},{0.0,35.02,0.0});
-Body Earth(5.972e24,{1.0,0,0},{0.0,29.78,0.0});
-Body Mars(6.417e24,{1.381,0,0},{0.0,24.07,0.0});
-Body Jupiter(1.898e27,{4.95,0,0},{0.0,13.07,0.0});
-Body Saturn(5.683e26,{9.0,0,0},{0.0,9.69,0.0});
-Body Uranus(8.681e25,{19.0,0,0},{0.0,6.80,0.0});
-Body Neptune(1.024e26,{30.0,0,0},{0.0,5.43,0.0});
-vector<Body> Planets={Mercury,Venus,Earth,Mars,Jupiter,Saturn,Uranus,Neptune};
 
 long double Body:: Radius(vector<long double> v,vector<long double>w){
     long double result=0;
@@ -47,14 +38,18 @@ vector<long double> Body:: DistanceVector(vector<long double>v, vector<long doub
 vector<long double> Body::GravatationalForce(vector<long double>x, vector<long double>y, long double M, long double m){
     vector<long double> distance_vector(3,0);
     long double r=0.0f;
+    long double r2=0.0f;
     
-    x=AUtoMeters(x); y=AUtoMeters(y);
+    x=AUtoMeters(x);
+    y=AUtoMeters(y);
     
     for(int i=0; i<x.size(); i++){
         distance_vector[i]=y[i]-x[i];
         r+=pow(distance_vector[i],2);
     }
-    if(r<1e-6){
+    
+    r2=sqrt(r);
+    if(r<1e-3){
         return vector<long double>(3,0);
     }
     vector<long double>unit_vector(3,0);
@@ -62,7 +57,7 @@ vector<long double> Body::GravatationalForce(vector<long double>x, vector<long d
         unit_vector[i]=distance_vector[i]/r;
     }
 
-    long double ForceScalar= G*(M*m)/(r*r);
+    long double ForceScalar= G*(M*m)/(r2);
     for(int i=0; i<unit_vector.size(); i++){
         unit_vector[i]*=ForceScalar;
 }
@@ -98,6 +93,16 @@ bool operator==(Body b1, Body b2){
     &&(b1.GetVelocity()==b2.GetVelocity());
 }
 
+bool operator==(vector<long double> v,vector<long double> w){
+    long double tol=1e-6;
+    if(v.size()!=w.size()) return false;
+    for(int i=0; i<w.size(); ++i){
+        if(abs(w[i]-v[i])>tol)
+            return false;
+    }
+    return true;
+}
+
 vector<long double> operator+(vector<long double> v, vector<long double> w){
     vector<long double> result;
     
@@ -117,10 +122,18 @@ vector<long double> operator*(long double a, vector<long double> v){
 }
 
 vector<long double> AUtoMeters(vector<long double> pos){
+    vector<long double> result(pos.size(),0);
+    for(int i=0; i<result.size();i++){
+        result[i]=AU*pos[i];
+    }
     return AU*pos;
 } //Convert AU To Meters
 vector<long double> MetersToAU(vector<long double> pos){
-    return(1.0/AU)*pos;
+    vector<long double> result(pos.size(),0);
+    for(int i=0; i<result.size();i++){
+        result[i]=(1.0/AU)*pos[i];
+    }
+    return result;
 } //Convert Meters to AU;
 vector<long double> KmPerSecToMetersPerSec(vector<long double> vel){
     return (1000.0)*vel;
@@ -138,16 +151,16 @@ long double MAX(long double x, long double y){
 
 
 
-vector<long double> Body::SumOfForces(vector<long double> Rpos,long double m){
+vector<long double> Body::SumOfForces(vector<long double> Rpos,long double m,Body Planets[8]){
     if(m==0){
         cout<<"Error Mass is Zero!";
         return vector<long double>(3,0);
     }
     vector<long double> F(3,0);
-    for(Body p: Planets){
-        if(p==*this)
+    for(int i=0; i<8; i++){
+        if(Planets[i]==*this)
                 continue;
-        vector<long double> G=GravatationalForce(Rpos, p.GetPosition(), m, p.GetMass());
+        vector<long double> G=GravatationalForce(Rpos, Planets[i].GetPosition(), m, Planets[i].GetMass());
 
         for(int i=0; i<F.size();i++){
             F[i]+=G[i];
@@ -159,15 +172,15 @@ vector<long double> Body::SumOfForces(vector<long double> Rpos,long double m){
     return F;
 }
 
-void Body::UpdateVelocityAndPosition(Body b1){
+void Body::UpdateVelocityAndPosition(Body b1,Body Planets[8]){
     vector<long double> Rpos=AUtoMeters(b1.GetPosition()); //Position Vector;
     vector<long double> v=KmPerSecToMetersPerSec(b1.GetVelocity()); //Velocity Vector;
     long double m=b1.GetMass();
     
     
-    for(Body b: Planets){
-        if(b==*this) continue;
-        vector<long double> d = AUtoMeters(DistanceVector(b.GetPosition(), this->GetPosition()));
+    for(int i=0; i<8; i++){
+        if(Planets[i]==b1) continue;
+        vector<long double> d = AUtoMeters(DistanceVector(b1.GetPosition(), Planets[i].GetPosition()));
         
         cout<<endl;
         
@@ -179,19 +192,19 @@ void Body::UpdateVelocityAndPosition(Body b1){
         for(int n=0; n<1; n++){
             
             vector<long double> k1=v;
-            vector<long double> l1=SumOfForces(Rpos, m);
+            vector<long double> l1=SumOfForces(Rpos, m,Planets);
             
             vector<long double> k2= v+(DT/2.0)*l1;
             vector<long double> Rpos_k2=Rpos+(DT/2.0)*k1;
-            vector<long double> l2=SumOfForces(Rpos_k2, m);
+            vector<long double> l2=SumOfForces(Rpos_k2, m,Planets);
 
             vector<long double> k3=v+(DT/2.0)*l2;
             vector<long double> Rpos_k3=Rpos+(DT/2.0)*k2;
-            vector<long double> l3=SumOfForces(Rpos_k3, m);
+            vector<long double> l3=SumOfForces(Rpos_k3, m,Planets);
             
             vector<long double> k4= v+(DT)*l3;
             vector<long double> Rpos_k4=Rpos+DT*k3;
-            vector<long double> l4=SumOfForces(Rpos_k4,m);
+            vector<long double> l4=SumOfForces(Rpos_k4,m,Planets);
     
             cout<<"l1: ";
             for(long double f: l1) cout<<f<<" ";
@@ -209,11 +222,29 @@ void Body::UpdateVelocityAndPosition(Body b1){
             for(long double f: l2) cout<<f<<" ";
             cout<<endl;
             
+            cout<<"k1: ";
+            for(long double f: k1) cout<<f<<" ";
+            cout<<endl;
+            
+            cout<<"k2: ";
+            for(long double f: k2) cout<<f<<" ";
+            cout<<endl;
+            
+            cout<<"k3: ";
+            for(long double f: k3) cout<<f<<" ";
+            cout<<endl;
+            
+            cout<<"k4: ";
+            for(long double f: k4) cout<<f<<" ";
+            cout<<endl;
+            
+            
             for(int i=0; i<3; i++){
                 v[i]=v[i]+(DT/6.0)*(l1[i]+(2.0*l2[i])+(2.0*l3[i])+l4[i]);
                 Rpos[i]=Rpos[i]+(DT/6.0)*(k1[i]+(2.0*k2[i])+(2.0*k3[i])+k4[i]);
             }
             cout<<endl;
+            
             PrintResults(Rpos,v);
         }
         
@@ -221,7 +252,7 @@ void Body::UpdateVelocityAndPosition(Body b1){
 }
 void Body::PrintResults(vector<long double> r, vector<long double> v){
     cout<<setprecision(8);
-    cout<<"Position Vector: (";
+    cout<<"Position Vector (Meters) : (";
     for(int i=0; i<r.size(); i++){
         if(i==r.size()-1)
             cout<<r[i];
@@ -230,7 +261,7 @@ void Body::PrintResults(vector<long double> r, vector<long double> v){
     }
     cout<<")"<<endl;
     
-    cout<<"Veclocity Vector: (";
+    cout<<"Veclocity Vector (m/s): (";
     for(int i=0; i<v.size(); i++){
         if(i==v.size()-1)
             cout<<v[i];

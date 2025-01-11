@@ -22,7 +22,8 @@ const long double G= 6.674*pow(10,-11); //N*m^2/kg^2
 const long double AU=1.496*pow(10,11); // m
 const long double DAYS_IN_SECONDS=86400;
 const long double SUNMASS=1.989*pow(10,30); //kg
-const long double DT = 86400; //sec (b-a/n) (10800-0/3600) 3 days in seconds
+const long double DT = 3600; //sec (b-a/n) (10800-0/3600) 3 days in seconds
+
 
 
 
@@ -51,9 +52,9 @@ public:
     vector<long double> DistanceVector(vector<long double>v, vector<long double>w);
     vector<long double> GravatationalForce(vector<long double>x, vector<long double>y, long double M, long double m);
 
-    vector<long double> SumOfForces(vector<long double> Rpos,long double m);
+    vector<long double> SumOfForces(vector<long double> Rpos,long double m,Body Planets[8]);
 
-    void UpdateVelocityAndPosition(Body b1);
+    void UpdateVelocityAndPosition(Body b1,Body Planets[8]);
     void PrintResults(vector<long double> r, vector<long double>);
 };
 
@@ -67,6 +68,8 @@ vector<long double> MetersToAU(vector<long double> pos); //Convert Meters to AU;
 vector<long double> KmPerSecToMetersPerSec(vector<long double> vel); // Km to Meters per sec
 vector<long double> MetersPerSecToKmPerSec(vector<long double> vel); // m to Km per sec
 long double MAX(long double x, long double y);
+
+
 
 #endif /* Coccyx_hpp */
 
